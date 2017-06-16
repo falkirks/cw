@@ -48,7 +48,7 @@ let displayContentWarning = function (warning) {
     warningList.push(warning.toLowerCase());
   }
   chrome.runtime.sendMessage({type: 'counter', count: warningList.length});
-
+  chrome.runtime.sendMessage({type: 'warnings', warnings: warningList});
 };
 
 let runChecks = function () {
@@ -75,6 +75,14 @@ observer.observe(document, {
   attributes: true,
   childList: true,
   characterData: true
+});
+
+chrome.runtime.onMessage.addListener( function(request, sender, sendResponse) {
+  switch (request.type){
+    case 'warningsRequest':
+      sendResponse({type: 'warnings', warnings: warningList});
+      break;
+  }
 });
 
 runChecks();
