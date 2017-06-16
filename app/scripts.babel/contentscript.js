@@ -59,6 +59,10 @@ let runChecks = function () {
   if(LOCAL_META_MODE === CW_META_ON || LOCAL_META_MODE === CW_META_FULL){
     tagConsumer(displayContentWarning);
   }
+
+  if(LOCAL_META_MODE === CW_META_DEFAULT || LOCAL_META_MODE === CW_META_ON || LOCAL_META_MODE === CW_META_FULL){
+    personalConsumer(displayContentWarning);
+  }
 };
 
 

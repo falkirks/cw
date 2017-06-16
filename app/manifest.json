@@ -16,6 +16,7 @@
   },
   "permissions": [
     "tabs",
+    "storage",
     "http://*/*",
     "https://*/*",
     "history",
@@ -40,6 +41,7 @@
         "scripts/toasty.min.js",
         "scripts/regex-consumer.js",
         "scripts/tag-consumer.js",
+        "scripts/personal-consumer.js",
         "scripts/contentscript.js"
       ],
       "css": [
