@@ -47,6 +47,8 @@ let displayContentWarning = function (warning) {
     toastr.warning(warning, 'Content warning!');
     warningList.push(warning.toLowerCase());
   }
+  chrome.runtime.sendMessage({type: 'counter', count: warningList.length});
+
 };
 
 let runChecks = function () {
