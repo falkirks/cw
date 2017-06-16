@@ -2,7 +2,7 @@
     This is the regex-consumer
  */
 const regexConsumer = function (cb) {
-  const regex = /\\?(CW|CN|TW|cw|cn|tw):(\s)?((\w| |\/|"|-)*\w)+(,(\w| |\/|"|-)+\w)*/g;
+  const regex = /\\?(CW|CN|TW|cw|cn|tw):(\s)?((\w| |\/|"|-)*\w"?)+(,(\w| |\/|"|-)+\w"?)*/g;
   let data = document.body.innerHTML;
   let m;
 

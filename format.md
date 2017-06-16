@@ -1,6 +1,6 @@
 ## Tag specification 
 
-cw works magically. It can detect standard "CW: thing, another thing" format using a regular expression. It also attempts to pull out words in the text which could suggest triggering content. 
+cw works magically. It can detect standard "\CW: thing, another thing" format using a regular expression. It also attempts to pull out words in the text which could suggest triggering content. 
 
 However, if you want cw to work even better on your website, you can use our meta tags and content attributes. 
 
