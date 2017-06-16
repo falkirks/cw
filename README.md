@@ -15,7 +15,7 @@ cw collects the data from all the consumers and shows warning dialogs only one t
 
 ### regex-consumer (prototype done)
 
-This consumer will look for text like “CW: thing, thing 2, thing 3”. 
+This consumer will look for text like “CW: thing, thing 2, thing 3”. The regex consumer can be suppressed for specific text using a simple `\` escape. 
 
 
 ### tag-consumer (prototype done)
